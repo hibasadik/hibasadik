@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Site Detection Result</title>
+<style>
+ .contain {
+            background-image: url("/static/image.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 0px;
+            opacity: 0.9;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: #171926;
+        }
+  h1 {
+            color: white;
+            font-size: 65px;
+            text-align:center;
+            font-family: Sans-Serif;
+        }
+</style>
+</head>
+<body>
+<div class="contain">
+    
+    <h1><p>{{  prediction_text }}</p></h1>
+</body>
+</html>

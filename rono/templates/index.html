@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Site Detection</title>
+<style>
+ .contain {
+            background-image: url("/static/3834019.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 0px;
+            opacity: 0.9;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: #171926;
+        }
+
+.fi {
+            background: blue;
+            padding: ;
+        }
+
+        .g {
+            color: white;
+            max-width: 800px;
+            position: relative;
+            top: 70px;
+            margin-left: 0px;
+            transparent: 1;
+            border: 2px;
+        }
+
+        .g form input {
+            outline: 0;
+            border: 0px;
+            width: 100%;
+            font-size: 16px;
+            padding-left: 5px;
+            background-color:white;
+            color: black;
+        }
+
+        .g form {
+            border-radius: 20px;
+            display: flex;
+            background:white;
+            color: white;
+            padding: 10px;
+            margin-top: 30px;
+            border: 2px;
+            border-style: solid;
+            border-color: white;
+        }
+
+        input::placeholder {
+            color: grey;
+        }
+.btn {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            outline: 0;
+            border-radius: 20px;
+            background:#01CDCE;
+            font-weight: 500;
+            cursor: pointer;
+            border-style: solid;
+            border-color: #01CDCE;
+            color: white;
+            background-color:#01CDCE;
+        }
+
+ .btn1 {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            outline: 0;
+            border-radius: 20px;
+            background:#01CDCE;
+            font-weight: 500;
+            cursor: pointer;
+            border-style: solid;
+            border-color: #01CDCE;
+            color: white;
+            background-color:light blue;
+            margin-left:20px;
+            text-decoration:none;
+        }
+ .btn1:hover {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            outline: 0;
+            border-radius: 20px;
+            background:#01CDCE;
+            font-weight: 500;
+            cursor: pointer;
+            transition:1s;
+            color: white;
+            background-color:#01CDCE;
+            margin-left:20px;
+            text-decoration:none;
+        }
+
+
+        .g form .btn {
+            font-size: 15px;
+            padding: 10px 30px;
+        }
+
+</style>
+</head>
+<body>
+<div class="contain">
+
+<center>
+<div class="g">
+    <form action="/predict" method="post">
+        <input type="text" name="url" placeholder="Enter URL" required>
+        <button type="submit"  class="btn">Check</button>
+    </form>
+</div>
+</body>
+</html>
